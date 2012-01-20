@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Calculator">
+</Property><Property Name="Файл решения" Value="E:\Epam\Calculator\Calculator.sln">
+</Property><Property Name="Файл параметров пользователя" Value="E:\Epam\Calculator\Calculator.suo">
+</Property><Property Name="Date" Value="20 января 2012 г.">
+</Property><Property Name="Time" Value="16:07">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Calculator.sln" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Calculator.suo" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator.suo">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Успешно создана резервная копия файла проекта: E:\Epam\Calculator\Backup\Calculator\Calculator.csproj">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj.user" Description="Резервная копия проекта успешно создана как E:\Epam\Calculator\Backup\Calculator\Calculator.csproj.user">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\CloseBracket.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\CloseBracket.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Digit.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Digit.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Division.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Division.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Expression.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Expression.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Lexema.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Lexema.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\LexemManager.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\LexemManager.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Minus.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Minus.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Multiply.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Multiply.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\OpenBracket.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\OpenBracket.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Plus.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Plus.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Properties\AssemblyInfo.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\RegexLexema.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\RegexLexema.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Text.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\Calculator\Text.cs">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Проект успешно преобразован">
+</Event><Event ErrorLevel="3" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="consoleTest" Source="consoleTest\consoleTest.csproj" Description="Успешно создана резервная копия файла проекта: E:\Epam\Calculator\Backup\consoleTest\consoleTest.csproj">
+</Event><Event ErrorLevel="0" Project="consoleTest" Source="consoleTest\Program.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\consoleTest\Program.cs">
+</Event><Event ErrorLevel="0" Project="consoleTest" Source="consoleTest\Properties\AssemblyInfo.cs" Description="Успешно создана резервная копия файла E:\Epam\Calculator\Backup\consoleTest\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="consoleTest" Source="consoleTest\consoleTest.csproj" Description="Проект успешно преобразован">
+</Event><Event ErrorLevel="3" Project="consoleTest" Source="consoleTest\consoleTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Calculator.sln" Description="Преобразование решения успешно завершено">
+</Event><Event ErrorLevel="3" Project="" Source="Calculator.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Calculator" Source="Calculator\Calculator.csproj" Description="Сканирование завершено: обновление для файлов проекта не требуется.">
+</Event><Event ErrorLevel="0" Project="consoleTest" Source="consoleTest\consoleTest.csproj" Description="Сканирование завершено: обновление для файлов проекта не требуется.">
+</Event></UpgradeLog>

@@ -1,0 +1,5 @@
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\bin\Debug\Calculator.dll
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Debug\ResolveAssemblyReference.cache
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Debug\Calculator.dll
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Debug\Calculator.pdb

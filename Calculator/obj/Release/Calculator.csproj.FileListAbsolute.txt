@@ -1,0 +1,15 @@
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\bin\Release\Calculator.dll
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\bin\Release\Calculator.pdb
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Release\ResolveAssemblyReference.cache
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Release\Calculator.dll
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Release\Calculator.pdb
+n:\Epam\Calculator\Calculator\bin\Release\Calculator.dll
+n:\Epam\Calculator\Calculator\bin\Release\Calculator.pdb
+n:\Epam\Calculator\Calculator\obj\Release\ResolveAssemblyReference.cache
+n:\Epam\Calculator\Calculator\obj\Release\Calculator.dll
+n:\Epam\Calculator\Calculator\obj\Release\Calculator.pdb
+E:\Epam\Calculator\Calculator\bin\Release\Calculator.dll
+E:\Epam\Calculator\Calculator\bin\Release\Calculator.pdb
+E:\Epam\Calculator\Calculator\obj\Release\ResolveAssemblyReference.cache
+E:\Epam\Calculator\Calculator\obj\Release\Calculator.dll
+E:\Epam\Calculator\Calculator\obj\Release\Calculator.pdb

@@ -1,0 +1,7 @@
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\bin\Debug\consoleTest.exe
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\bin\Debug\consoleTest.pdb
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\bin\Debug\Calculator.dll
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\bin\Debug\Calculator.pdb
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\obj\Debug\ResolveAssemblyReference.cache
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\obj\Debug\consoleTest.exe
+D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\consoleTest\obj\Debug\consoleTest.pdb

@@ -1,0 +1,7 @@
+E:\Epam\Calculator\MetaLSyntaxAnalizator\bin\Release\MetaLSyntaxAnalizator.dll
+E:\Epam\Calculator\MetaLSyntaxAnalizator\bin\Release\MetaLSyntaxAnalizator.pdb
+E:\Epam\Calculator\MetaLSyntaxAnalizator\bin\Release\Calculator.dll
+E:\Epam\Calculator\MetaLSyntaxAnalizator\bin\Release\Calculator.pdb
+E:\Epam\Calculator\MetaLSyntaxAnalizator\obj\Release\ResolveAssemblyReference.cache
+E:\Epam\Calculator\MetaLSyntaxAnalizator\obj\Release\MetaLSyntaxAnalizator.dll
+E:\Epam\Calculator\MetaLSyntaxAnalizator\obj\Release\MetaLSyntaxAnalizator.pdb
