@@ -3,3 +3,8 @@ D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\bin\Debug\Calcul
 D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Debug\ResolveAssemblyReference.cache
 D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Debug\Calculator.dll
 D:\All_projects\OTHER\VS\C#\Learning\Epam\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\MyProjects\MetaL\Calculator\bin\Debug\Calculator.dll
+D:\MyProjects\MetaL\Calculator\bin\Debug\Calculator.pdb
+D:\MyProjects\MetaL\Calculator\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProjects\MetaL\Calculator\obj\Debug\Calculator.dll
+D:\MyProjects\MetaL\Calculator\obj\Debug\Calculator.pdb

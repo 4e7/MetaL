@@ -46,6 +46,8 @@
     <Compile Include="BinOperEqual.cs" />
     <Compile Include="BinOperOr.cs" />
     <Compile Include="BinOperXor.cs" />
+    <Compile Include="Comma.cs" />
+    <Compile Include="Endl.cs" />
     <Compile Include="Const.cs" />
     <Compile Include="End.cs" />
     <Compile Include="For.cs" />

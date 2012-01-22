@@ -63,6 +63,10 @@
       <Project>{6F93827C-457A-4170-A654-CF672D342682}</Project>
       <Name>MetaLLexems</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MetaLSyntaxAnalizator\MetaLSyntaxAnalizator.csproj">
+      <Project>{4B55A19C-C199-4328-8385-46528E83907F}</Project>
+      <Name>MetaLSyntaxAnalizator</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -9,6 +9,6 @@ namespace MetaLLexems
     public class Identifire:RegexLexema<Identifire>
     {
         public Identifire()
-        { m_regex = "[A-Z,a-z]*";} 
+        { m_regex = "[A-Za-z]*";} 
     }
 }

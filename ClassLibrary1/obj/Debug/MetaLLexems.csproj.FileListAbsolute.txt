@@ -1,0 +1,7 @@
+D:\MyProjects\MetaL\ClassLibrary1\bin\Debug\MetaLLexems.dll
+D:\MyProjects\MetaL\ClassLibrary1\bin\Debug\MetaLLexems.pdb
+D:\MyProjects\MetaL\ClassLibrary1\bin\Debug\Calculator.dll
+D:\MyProjects\MetaL\ClassLibrary1\bin\Debug\Calculator.pdb
+D:\MyProjects\MetaL\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProjects\MetaL\ClassLibrary1\obj\Debug\MetaLLexems.dll
+D:\MyProjects\MetaL\ClassLibrary1\obj\Debug\MetaLLexems.pdb

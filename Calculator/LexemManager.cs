@@ -88,6 +88,7 @@ namespace Lexems
         public LexemList parse(string s) 
         {
             errors.Clear();
+            s.Replace('\n',' ');
             LexemList lexems = recursiveParse(ref s, 0);
             return lexems;
         }

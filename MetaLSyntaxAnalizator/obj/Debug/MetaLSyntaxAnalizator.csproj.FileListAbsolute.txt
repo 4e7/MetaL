@@ -1,0 +1,9 @@
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\bin\Debug\MetaLSyntaxAnalizator.dll
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\bin\Debug\MetaLSyntaxAnalizator.pdb
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\bin\Debug\Calculator.dll
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\bin\Debug\Calculator.pdb
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\obj\Debug\MetaLSyntaxAnalizator.dll
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\obj\Debug\MetaLSyntaxAnalizator.pdb
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\bin\Debug\MetaLLexems.dll
+D:\MyProjects\MetaL\MetaLSyntaxAnalizator\bin\Debug\MetaLLexems.pdb

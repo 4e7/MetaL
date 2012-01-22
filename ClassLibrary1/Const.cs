@@ -9,6 +9,6 @@ namespace MetaLLexems
     public class Const:RegexLexema<Const>
     {
         public Const()
-        { m_regex = "[1,0]?"; }
+        { m_regex = "[10]?"; }
     }
 }
