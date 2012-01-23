@@ -53,6 +53,7 @@
     <Compile Include="For.cs" />
     <Compile Include="Identifire.cs" />
     <Compile Include="KeyWord.cs" />
+    <Compile Include="Print.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="To.cs" />
     <Compile Include="UnOper.cs" />

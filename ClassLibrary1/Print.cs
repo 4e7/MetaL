@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Lexems;
 
 namespace MetaLLexems
 {
-    public class Const:RegexLexema<Const>
+    public class Print:Lexems.RegexLexema<Print>
     {
-        public Const()
-        { m_regex = "[0-9]*"; }
+        public Print() {
+            m_regex = "print";
+        }
     }
 }

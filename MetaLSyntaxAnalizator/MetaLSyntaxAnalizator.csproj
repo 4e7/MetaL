@@ -43,11 +43,14 @@
     <Compile Include="Analizator.cs" />
     <Compile Include="Assignment.cs" />
     <Compile Include="AssignmentListc.cs" />
+    <Compile Include="BinaryOperator.cs" />
     <Compile Include="CalculationsDescription.cs" />
     <Compile Include="CodeMiseError.cs" />
     <Compile Include="Expression.cs" />
+    <Compile Include="ForToc.cs" />
     <Compile Include="Indetifire.cs" />
     <Compile Include="Operand.cs" />
+    <Compile Include="Print.cs" />
     <Compile Include="SubExpression.cs" />
     <Compile Include="SyntaxExpression.cs" />
     <Compile Include="Programm.cs" />

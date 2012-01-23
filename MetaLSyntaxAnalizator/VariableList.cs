@@ -34,65 +34,59 @@ namespace MetaLSyntaxAnalizator
     }
     public class VariableList:SyntaxExpression
     {
-        public VariableList(Analizator a)
+        public VariableList(SyntaxExpression a)
             : base(a)
         {
             
         }
         public override string go()
         {
-            SyntaxError error = null;
+            
             Lexems.Lexema l = null;
-            string s = null;
-            s = "";
-            if (analizator.ids.Count <= 0)
+            string s = "";
+            bool waitIndetifire = true;
+            while ((l = getToken()) != null)
             {
-                s = "SEG1 SEGMENT\n";
-            }
-            string i = new MetaLSyntaxAnalizator.Indetifire(analizator).go();
-            if (i != null)
-            {
-
-                s += i;
-                l = analizator.getToken();
                 string type = l.GetType().Name;
-                switch (type)
+                if (waitIndetifire)
                 {
-                    case "Comma":
+                    if (type == "Identifire")
+                    {
+                        if (!hasId(l.Data))
                         {
-                            string nextIndetifire = new VariableList(analizator).go();
-                            if (nextIndetifire == null)
-                            {
-                                error = new IndetifierMissedError();
-                                error.position = analizator.position;
-                                analizator.errors.Add(error);
-                                s = null;
-                            }
-                            else
-                            {
-                                s += nextIndetifire;
-                            }
+                            addId(l.Data);
+                            s += "\t" + l.Data + " dw ?";
                         }
-                        break;
-                    case "Endl":
-                        s += "SEG1 ENDS\n";
-                        analizator.position++;
-                        break;
-                    default:
-                        error = new CommaOrEndlMissedError();
-                        error.position = analizator.position;
-                        analizator.errors.Add(error);
-                        s = null;
-                        break;
+                        else
+                        {
+                            addError(new IndetifireRedefinitionError(l.Data), 0);
+                        }
+                        waitIndetifire = false; 
+                    }
+                    else
+                    {
+                        waitIndetifire = true;
+                        addError(new IndetifierMissedError(), 0);
+                    }
+                    
                 }
-
-
+                else
+                {
+                    if (type == "Comma")
+                    {
+                        s += "\n";
+                        waitIndetifire = true;
+                    }
+                    else
+                    {
+                        waitIndetifire = false; 
+                        addError(new CommaOrEndlMissedError(), 0);
+                    }
+                    
+                    
+                }
+                
             }
-            else
-            {
-                s = null;
-            }
-          
             return s;
         }
     }

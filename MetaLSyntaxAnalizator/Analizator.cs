@@ -8,10 +8,10 @@ namespace MetaLSyntaxAnalizator
 {
     
    
-    public class Analizator
+    public class Analizator:SyntaxExpression
     {
         protected LexicalAnalizator m_lexicalAnalizator=new LexicalAnalizator();
-        protected List<Lexema> m_lexems=new List<Lexema>();
+        public string Programm;
         public List<string> errorMessages()
         {
             List<string> messages = new List<string>();
@@ -26,44 +26,21 @@ namespace MetaLSyntaxAnalizator
             }
             return messages;
         }
-        public List<SyntaxError> errors=new List<SyntaxError>();
-        public HashSet<string> ids=new HashSet<string>();
-        int m_tokenPosition = 0;
-        class FakeLexema : Lexema
+        
+        
+        public Analizator():base(null)
         {
-            public override Lexema parse(ref string s)
-            {
-                return null;
-            }
-        }
-        public Lexema getToken()
-        {
-            
-            Lexema l = new FakeLexema();
-            if (m_tokenPosition < m_lexems.Count)
-            {
-                l = m_lexems[m_tokenPosition];
-                m_tokenPosition++;
-            }
-            
-            return l;
-        }
-        public void backToken()
-        {
-            m_tokenPosition--;
-        }
-        public int position=0;
-        public Analizator()
-        {
+            this.m_ids = new HashSet<string>();
             m_lexicalAnalizator.registerLexem(new UnOperNot());
+            //m_lexicalAnalizator.registerLexem(new MetaLLexems.Print());
             m_lexicalAnalizator.registerLexem(new OpenBracket());
             m_lexicalAnalizator.registerLexem(new CloseBracket());
             m_lexicalAnalizator.registerLexem(new BinOperAnd());
             m_lexicalAnalizator.registerLexem(new BinOperOr());
             m_lexicalAnalizator.registerLexem(new BinOperXor());
             m_lexicalAnalizator.registerLexem(new Const());
-           // m_lexicalAnalizator.registerLexem(new To());
-            //m_lexicalAnalizator.registerLexem(new For());
+            m_lexicalAnalizator.registerLexem(new To());
+            m_lexicalAnalizator.registerLexem(new For());
             m_lexicalAnalizator.registerLexem(new End());
             m_lexicalAnalizator.registerLexem(new Begin());
             m_lexicalAnalizator.registerLexem(new Var());
@@ -72,20 +49,26 @@ namespace MetaLSyntaxAnalizator
             m_lexicalAnalizator.registerLexem(new Comma());
             m_lexicalAnalizator.registerLexem(new MetaLLexems.Identifire());
         }
-        public string parse(string text)
+
+        public override string go()
         {
-            m_tokenPosition = 0;
-            position = 0;
+
             errors.Clear();
-            m_lexems.Clear();
-            string result = null;
-            m_lexems=m_lexicalAnalizator.parse(text);
-            result = new Programm(this).go();
+            this.lexems=m_lexicalAnalizator.parse(Programm);
             if (m_lexicalAnalizator.errors.Count != 0)
             {
-                result = null;
+                return null;
             }
+            string result = new Programm(this).go();
+            
             return result;
+            
+        }
+        public string parse(string text)
+        {
+            this.Programm = text;
+            
+            return go();
         }
 
     }

@@ -22,7 +22,7 @@ namespace MetaLSyntaxAnalizator
     }
    public  class VariableDefinition:SyntaxExpression
     {
-       public VariableDefinition(Analizator a)
+       public VariableDefinition(SyntaxExpression a)
             : base(a)
         {
             
@@ -31,21 +31,40 @@ namespace MetaLSyntaxAnalizator
        {
            SyntaxError error = null;
            string s = null;
-           Lexema l = analizator.getToken();
+           Lexema l = getToken();
            if (l.GetType().Name == "Var")
            {
-               s = new VariableList(analizator).go();
+               while ((l=getToken())!=null&&l.GetType().Name!="Endl")
+               {
+                   string type=l.GetType().Name;
+                   if (type == "Begin")
+                   {
+                       addError(new EndlMissedError(), 0);
+                       break;
+                   }
+                   lexems.Add(l);
+               }
+               if (l==null)
+               {
+                   addError(new EndlMissedError(), 0);
+               }
+               string result = "SEG1 SEGMENT\n";
+               s = new VariableList(this).go();
                if (s == null)
                {
                    error = new VariableListMissedError();
-                   error.position = analizator.position;
-                   analizator.errors.Add(error);
+
+               }
+               else
+               {
+                   result += s+"\n";
+                   result += "SEG1 ENDS\n";
+                   s = result;
                }
                
             }
 
            
-
            return s;
        }
     }

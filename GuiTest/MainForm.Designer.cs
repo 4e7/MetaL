@@ -90,7 +90,8 @@
             this.tbSource.Name = "tbSource";
             this.tbSource.Size = new System.Drawing.Size(392, 308);
             this.tbSource.TabIndex = 6;
-            this.tbSource.Text = "Var a,b;\nBegin\nEnd\n";
+            this.tbSource.Text = "Var a,b,c;\nBegin\n\nFor a=1; To 5\nBegin\nFor b=a; To 8\nBegin\nc=1^(2^a);\nEnd\nEnd\n\nEnd" +
+    "";
             // 
             // MainForm
             // 

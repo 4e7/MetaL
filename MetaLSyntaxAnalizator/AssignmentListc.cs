@@ -7,19 +7,22 @@ namespace MetaLSyntaxAnalizator
 {
     public class AssignmentList:SyntaxExpression
     {
-        public AssignmentList (Analizator a):base(a)
+        public AssignmentList (SyntaxExpression a):base(a)
         {
             
         }
         public override string go()
         {
-            string s = null;
-            string assignment=new Assignment(analizator).go();
-            if (assignment != null)
+            string s = "";
+            Lexems.Lexema l=null;
+            while ((l = getToken()) != null)
             {
-                s += assignment;
-                string next = new AssignmentList(analizator).go();
-                if (next != null) s += next;
+                lexems.Add(l);
+            }
+            string assignment = null;
+            while ((assignment = new Assignment(this).go()) != null)
+            {
+                s += assignment+"\n";
             }
             
             return s;

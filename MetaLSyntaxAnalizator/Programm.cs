@@ -29,29 +29,33 @@ namespace MetaLSyntaxAnalizator
         {
             string s = null;
             SyntaxError error = null;
-            s = new VariableDefinition(analizator).go();
+            Lexems.Lexema l = null;
+            while ((l = getToken()) != null)
+            {
+                lexems.Add(l);
+            }
+            s = new VariableDefinition(this).go();
             if (s == null)
             {
                 error = new VariableDefinitionMissedError();
                 error.position = 0;
-                analizator.errors.Add(error);
-                analizator.position++;
+                
             }
             else
             {
-                string calculations= new CalculationsDescription(analizator).go();
+                s += "CODE SEGMENT\nASSUME CS:CODE, DS:SEG1\nSTART:\n\tmov AX,SEG1\n\tmov DS,AX\n";
+                CalculationsDescription cd = new CalculationsDescription(this);
+                string calculations= cd.go();
                 if (calculations != null)
                 {
                     s += calculations;
                 }
                 else
                 {
-                    error = new CalculationsMissedError();
-                    error.position = analizator.position;
-                    analizator.errors.Add(error);
-                    s = null;
+                   addError ( new CalculationsMissedError(),0);
                     
                 }
+                s += "CODE ENDS\nEND START\n";
             }
 
             return s;

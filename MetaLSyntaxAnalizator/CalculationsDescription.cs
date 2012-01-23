@@ -14,6 +14,9 @@ namespace MetaLSyntaxAnalizator
     }
     class KeyWordEndMissed : SyntaxError
     {
+        public KeyWordEndMissed()
+        { 
+        }
         public override string message()
         {
             return "Пропущенно ключевое слово End";
@@ -21,47 +24,69 @@ namespace MetaLSyntaxAnalizator
     }
     public class CalculationsDescription:SyntaxExpression
     {
-        public CalculationsDescription(Analizator a)
+        public CalculationsDescription(SyntaxExpression a)
             : base(a)
         {
             
+            
+        }
+        protected List<Lexems.Lexema> findEnd()
+        {
+            List<Lexems.Lexema> ll = new List<Lexems.Lexema>();
+            Lexems.Lexema l = null;
+            while ((l = getToken()) != null && l.GetType().Name != "End")
+            {
+                ll.Add(l);
+            }
+            if (l != null)
+            {
+                ll.Add(l);
+                ll.AddRange(findEnd());
+            }
+            return ll;
         }
         public override string go()
         {
-            
-            string s = null;
-            Lexems.Lexema l = analizator.getToken();
-            if (l.GetType().Name == "Begin")
-            {
-                s = "CODE SEGMENT\nASSUME CS:CODE, DS:SEG1\nSTART:\n\tmov AX,SEG1\n\tmov DS,AX\n";
-                string assignmentsList = new AssignmentList(analizator).go();
 
-                if (assignmentsList != null)
-                {
-                    s += assignmentsList;
-                }
-                    l = analizator.getToken();
-                    if (l != null && l.GetType().Name == "End")
-                    {
-                        s += "CODE ENDS\nEND START\n";
-                    }
-                    else
-                    {
-                        SyntaxError error = new KeyWordEndMissed();
-                        error.position = analizator.position;
-                        analizator.errors.Add(error);
-                        s = null;
-                    }
+            string s = "";
+            Lexems.Lexema l = getToken();
+            Lexems.Lexema fl = l;
+            if (l!=null&&l.GetType().Name == "Begin")
+            {
+                s = "";
                 
+            }
+
+            else
+            {
+                
+                addError(new KeyWordBeginMissed(), 0);
+
+            }
+            this.lexems.AddRange(findEnd());
+            if (lexems.Count > 0)
+            {
+                l = lexems.Last();
+
+                lexems.RemoveAt(lexems.Count - 1);
+            }
+            if (l == null || l.GetType().Name != "End")
+            {
+                addError(new KeyWordEndMissed(), 0);
             }
             else
             {
-                SyntaxError error = new KeyWordBeginMissed();
-                error.position = analizator.position;
-                analizator.errors.Add(error);
-                s = null;
- 
+                
             }
+
+            string assignmentsList = new AssignmentList(this).go();
+            if (assignmentsList != null)
+            {
+                s += assignmentsList + "\n";
+            }
+
+            
+           
             return s;
         }
     }

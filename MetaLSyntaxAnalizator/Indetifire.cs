@@ -7,7 +7,7 @@ namespace MetaLSyntaxAnalizator
 {
     class Indetifire:SyntaxExpression
     {
-        public Indetifire(Analizator a)
+        public Indetifire(SyntaxExpression a)
             : base(a)
         {
             
@@ -17,11 +17,12 @@ namespace MetaLSyntaxAnalizator
            
            SyntaxError error = null;
            string s = null;
-           Lexems.Lexema l = analizator.getToken();
+           Lexems.Lexema l = getToken();
            if (l.GetType().Name == "Identifire")
            {
-               s = "";
-               if (analizator.ids.Contains(l.Data))
+               s = "Undefinded";
+               
+               if (hasId(l.Data))
                {
                    error = new IndetifireRedefinitionError(l.Data);
                }
@@ -29,14 +30,12 @@ namespace MetaLSyntaxAnalizator
                {
                    s += "\t" +l.Data + " dw ?\n";
                }
-
-               analizator.ids.Add(l.Data);
+               addId(l.Data);
            }
            else
            {
                error = new IndetifierMissedError();
-               error.position = analizator.position;
-               analizator.errors.Add(error);
+               
            }
            return s;
        }
